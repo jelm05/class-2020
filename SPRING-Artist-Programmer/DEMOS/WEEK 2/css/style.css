@@ -1,0 +1,16 @@
+div {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  color: white;
+}
+
+/* This is an #ID */
+#special {
+  background-color: red;
+}
+
+/* This is a .class */
+.box {
+  background-color: blue;
+}

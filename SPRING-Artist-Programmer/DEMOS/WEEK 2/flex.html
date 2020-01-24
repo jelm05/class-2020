@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Flex</title>
+  </head>
+
+  <style media="screen">
+    .flex-container {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      display: flex;
+
+      flex-direction: row;
+      flex-wrap: wrap;
+
+    }
+
+    .flex-item {
+      background-color: tomato;
+      padding: 5px;
+      width: 200px;
+      height: 150px;
+      margin: 10px;
+
+      line-height: 150px;
+      font-weight: bold;
+      font-size: 30px;
+      text-align: center;
+      color: white;
+
+    }
+
+    ul {
+      list-style-type: none;
+    }
+  </style>
+
+  <body>
+
+    <ul class="flex-container">
+      <li class="flex-item">1</li>
+      <li class="flex-item">2</li>
+      <li class="flex-item">3</li>
+      <li class="flex-item">4</li>
+      <li class="flex-item">5</li>
+      <li class="flex-item">6</li>
+      <li class="flex-item">7</li>
+      <li class="flex-item">8</li>
+    </ul>
+
+  </body>
+</html>
