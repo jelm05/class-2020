@@ -1,0 +1,48 @@
+body, html {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 1px solid red;
+  font-family: Helvetica, helvetica, sans-serif;
+}
+
+section#primary-container {
+  width: 1200px;
+  /* top/bottom right/left */
+  /* this centers our fixed width section */
+  margin: 0 auto;
+  border: 1px solid blue;
+}
+
+.hidden {
+  display: none;
+}
+
+/* SMARTPHONES, 320px by 480px */
+@media only screen and
+(min-device-width: 320px) and
+(max-device-width: 480px) {
+
+  section#primary-container {
+    width: 320px;
+    margin: 0 auto;
+    background-color: green;
+  }
+
+}
+
+/* LANDSCAPE SMARTPHONES, 321px by 568px */
+@media only screen and
+(min-width: 321px) and
+(max-width: 568px) and
+(orientation: landscape) {
+  .hidden {
+    display: block;
+  }
+
+  .mobile-landscape {
+    font-family: Helvetica;
+    font-size: 36px;
+    background-color: tomato;
+  }
+}
