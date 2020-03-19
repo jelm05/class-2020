@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Canvas</title>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+
+        let canvas = $("#canvas")[0];
+        let ctx = canvas.getContext("2d");
+
+        // This creates a 600x600 pixel black square
+        ctx.fillStyle = "black";
+        // x, y, width, height
+        ctx.fillRect( 0, 0, canvas.width, canvas.height );
+
+        let posX = 40;
+        let posY = 40;
+
+        setInterval(function(){
+
+          ctx.fillStyle = "rgba(0,0,0,0.01)";
+          ctx.fillRect( 0, 0, canvas.width, canvas.height );
+
+          if( posY < 200 ) {
+            posY += 5;
+          }
+
+          if( posY >= 200 ) {
+            posX += 5;
+          }
+
+          // This creates a 40x40 red square
+          ctx.fillStyle = "red";
+          ctx.fillRect( posX, posY, 30, 30 );
+
+        }, 30);
+
+      });
+    </script>
+
+  </head>
+  <body>
+    <canvas id="canvas" width="600" height="600">
+      <!-- Only shows up on canvas error -->
+      Your browser doesn't support HTML5 Canvas.
+    </canvas>
+  </body>
+</html>
