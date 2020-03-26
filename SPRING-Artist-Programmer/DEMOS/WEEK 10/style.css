@@ -1,0 +1,72 @@
+/* Parent of ul and grandparent of li */
+.slider {
+  width: 100%;
+  height: 700px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Child of slider */
+.slider ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  width: 300%;
+  height: 100%;
+  top: 0;
+}
+
+/* Child of slider ul */
+.slider li {
+  margin: 0;
+  padding: 0;
+  /* Each slide should be 1/3 the width of the parent */
+  width: 33.3333333333333333%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  border: none;
+  overflow: hidden;
+
+  position: absolute;
+
+}
+
+.slider li img {
+  border: none;
+  width: 100%;
+  min-height: 100%;
+}
+
+.slider button {
+  position: absolute;
+  display: block;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  top: 0;
+  bottom: 0;
+  width: 20%;
+  background-color: rgba( 0, 0, 0, 0.3 );
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  z-index: 2;
+  opacity: 0;
+}
+
+.slider button.prev {
+  left: 0;
+}
+
+.slider button.next {
+  right: 0;
+}
+
+.slider button:hover,
+.slider button:active {
+  opacity: 1.0;
+  cursor: pointer;
+}
