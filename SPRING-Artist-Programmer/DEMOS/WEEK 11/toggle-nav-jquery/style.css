@@ -1,0 +1,51 @@
+
+#nav-buttons {
+  text-align: center;
+  width: 1000px;
+  border: 1px solid blue;
+}
+
+div.button {
+  border: 1px solid red;
+  width: 200px;
+  height: 50px;
+  margin: 10px;
+  display: inline-block;
+  background-color: grey;
+  color: white;
+  vertical-align: top;
+  margin-bottom: 0px;
+}
+
+div.button h1 {
+  font-family: Helvetica, Helvetica Bold, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  height: 70%;
+  cursor: pointer;
+  margin-bottom: 0px;
+}
+
+ul.toggle {
+  list-style: none;
+  background-color: grey;
+  padding: 10px;
+  margin-top: 0px;
+
+  display: none;
+}
+
+ul.toggle li {
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  padding-top: 10px;
+}
+
+ul.toggle a {
+  color: white;
+  text-decoration: none;
+}
+
+ul.toggle a:hover {
+  text-decoration: underline;
+}

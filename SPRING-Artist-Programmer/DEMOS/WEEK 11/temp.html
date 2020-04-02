@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+      $(function(){
+
+        var currentSlide = 0, // start slide index
+            pauseTime = 2000, // pause time (ms)
+            fadeTime = 500, // fade time (ms)
+            gallery = $("#gallery"), // cache gallery
+            // make the div a child of gallery
+            slide = $("div", gallery), // cache slides
+            total = slide.length, // use this to go back to first slide
+            clear; //hide or clear
+
+
+
+        // hide all slides but current one
+        // eq() : Reduce the set of matched elements to the one at the specified index.
+        slide.hide().eq( currentSlide ).show();
+
+        function stopFn() {
+          clearInterval(clear);
+        }
+
+        function loopFn() {
+          // Set interval takes two args, a function and a time
+          clear = setInterval(fadeFn, pauseTime);
+        }
+
+        function fadeFn() {
+          // console.log(++currentSlide%total)
+          slide
+            .fadeOut(fadeTime)
+            .eq( ++currentSlide%total )
+            .stop()
+            .fadeIn(fadeTime);
+        }
+
+        // stop the gallery animation
+        //if mouse is hovering over image
+        // gallery.hover( stopFn, loopFn );
+
+        loopFn(); // Finally, start
+
+      });
+    </script>
+    <style>
+
+      body, html {
+        margin: 0;
+        padding: 0;
+      }
+
+      #gallery {
+        width: 100vw;
+        height: 100vh;
+        border: 1px solid black;
+      }
+
+      #gallery img {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <div id="gallery">
+
+      <div>
+        <img src="http://placehold.it/960x310/cf5" />
+      </div>
+
+      <div>
+        <img src="http://placehold.it/960x310/" />
+      </div>
+
+      <div>
+        <img src="http://placehold.it/960x310/444" />
+      </div>
+
+    </div>
+
+  </body>
+</html>

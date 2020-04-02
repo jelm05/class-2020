@@ -1,0 +1,58 @@
+
+div.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+button.dropdown-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+div.dropdown-content {
+  /* This essentially binds out dropdown content */
+  /* To our button, so they move together on the page */
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  z-index: 1;
+  box-shadow: 0px 8px 16px 0px rgba( 0, 0, 0, 0.2 );
+  /* This hides our content */
+  display: none;
+}
+
+/* Apply these rules to each anchor tag that's */
+/* a child of dropdown-content */
+div.dropdown-content a {
+  color: black;
+  /* top/bottom and left/right */
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+}
+
+/* :hover means to only apply these styles when */
+/* The cursor is over the preceding element  */
+.dropdown:hover .dropdown-content {
+  /* Display: block is default */
+  /* So we're just saying, display as you normally would */
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover button.dropdown-button {
+  background-color: #3e8e41;
+}
+
+nav {
+  border: 1px solid black;
+  text-align: center;
+  padding: 20px;
+}
