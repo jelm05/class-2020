@@ -1,0 +1,46 @@
+.gallery {
+  border: 2px solid blue;
+  padding: 25px;
+  text-align: center;
+}
+
+.lightbox {
+  border: 5px solid black;
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.lightbox img,
+#lightbox-overlay img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#lightbox-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* vw = viewport width */
+  /* vh = viewport height */
+  width: 100vw;
+  height: 100vh;
+  display: none;
+}
+
+#close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  color: white;
+  font-size: 2em;
+  font-family: sans-serif;
+  z-index: 2;
+  cursor: pointer;
+  padding: 20px;
+}
