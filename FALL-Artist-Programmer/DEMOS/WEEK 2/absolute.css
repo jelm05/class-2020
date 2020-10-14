@@ -1,0 +1,33 @@
+
+/* This a CSS Comment */
+
+/*
+Okay CSS, find everything that's a DIV, and make it's
+background color red - not, ALL DIVS
+*/
+
+div {
+  padding: 5px;
+  margin: 15px;
+}
+
+/* the period . symbol represents a class name */
+/* This literally means: div with a class of red */
+div.red {
+  background-color: red;
+  font-size: 12px;
+  width: 50px;
+  position: relative;
+  float: left;
+}
+
+/* the hashtag # symbol represents an ID name */
+/* This literally means: div with an ID of blue-box */
+div#blue-box {
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 200px;
+  left: 150px;
+}
