@@ -1,0 +1,103 @@
+
+/* Only apply the below styles if the browser is over 600px */
+@media (min-width: 600px) {
+
+  /*
+  Defines the columns and rows of the grid with a space-seperated list of values
+  The values represent the track size,
+  and the space between them represents the grid line.
+  */
+
+  main {
+    /* We made a 6 column grid of equal width columns */
+    display: grid;
+    /* Track size can be length, percentage, or a fraction of freespace */
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .info1 {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  .info2 {
+    grid-column: span 2;
+  }
+
+  #figure1 {
+    grid-column: span 3;
+    grid-row: span 2;
+  }
+
+  #figure6 {
+    grid-column: span 2;
+  }
+
+  .figure7 {
+    grid-column: span 3;
+  }
+
+
+
+}
+/* This ends our media query */
+
+
+
+
+
+/* Global Styles */
+
+body {
+  max-width: 1600px;
+  /* the first value : top/bottom */
+  /* the second value : left and right */
+  margin: 0 auto;
+  font-family: Helvetica, sans-serif;
+}
+
+header {
+  padding: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: orange;
+}
+
+.logo-img {
+  margin-right: 10px;
+  height: 60px;
+}
+
+.logo-text {
+  font-family: Arial, serif;
+  font-size: 2.6em;
+  color: #c3bab9;
+}
+
+.info1, .info2 {
+  padding: 40px;
+  background-color: #333;
+  color: white;
+}
+
+.figure-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Flex Styles */
+
+.logo {
+  display: flex;
+  align-items: center;
+}
