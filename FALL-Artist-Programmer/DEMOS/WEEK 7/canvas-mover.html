@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+     $(function(){
+
+       var canvas = $("#canvas")[0],
+           c = canvas.getContext("2d");
+       
+       c.fillStyle = "black";
+       c.fillRect(0,0,canvas.width, canvas.height);
+       
+       
+       var posY = 0;
+       var posX = 20;
+
+
+
+       setInterval(function(){
+         c.fillStyle = "rgba(0,0,0,0.1)";
+         c.fillRect(0,0,canvas.width, canvas.height);
+         
+         if (posY < 200){
+           posY += 5;
+         }
+         if (posY >= 200){
+            posX += 5;
+         }
+         if(posX >= 450){
+          posY += 15;
+         }
+         
+         c.fillStyle = "red";
+         c.fillRect(posX, posY, 30, 30);
+         
+       }, 30);
+     
+        
+       
+
+     });
+    </script>
+    <style>
+    </style>
+  </head>
+  <body>
+    <canvas id="canvas" width="500" height="500">
+      go get chrome
+    </canvas>
+    
+  </body>
+</html>
