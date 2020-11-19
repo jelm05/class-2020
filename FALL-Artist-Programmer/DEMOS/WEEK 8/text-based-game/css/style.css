@@ -1,0 +1,27 @@
+body, html {
+  width: 100%;
+}
+
+div.container {
+  width: 80%;
+  margin: 10% auto;
+  padding: 25px;
+  border: 1px solid blue;
+}
+
+div#text {
+  width: 100%;
+  text-align: center;
+  border: 1px solid red;
+}
+
+div#story-options {
+  width: 100%;
+  text-align: center;
+  border: 1px solid green;
+}
+
+button.btn {
+  margin: 25px;
+  padding: 10px;
+}
