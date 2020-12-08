@@ -1,0 +1,77 @@
+body, html {
+  font-family : sans-serif;
+  font-size : 15px;
+  -webkit-user-select : none;
+  -moz-user-select : none;
+  -o-user-select : none;
+  user-select : none;
+}
+
+#char {
+  position : absolute;
+  width : 20px;
+  height : 40px; 
+  background-color : black;
+}
+
+.enemy {
+  position : absolute;
+  width : 40px;
+  height : 10px;
+  background-color : red;
+}
+
+.pickup {
+  position : absolute;
+  width : 20px;
+  height : 20px;
+  background-color : #ffea00;
+  border-radius : 20px;
+}
+
+.message {
+  position : absolute;
+  padding : 30px;
+  left : 190px;
+  top : 140px;
+  background-color : white;
+  width : 170px;
+  -webkit-box-shadow : 0px 0px 10px 10px rgba(0,0,0,0.2);
+  text-align : center;
+  z-index : 100;
+}
+
+#startGame {
+  cursor : pointer;
+}
+
+#gameOver {
+  display : none;
+}
+
+#world {
+  position : relative;
+  margin-left : auto;
+  margin-right : auto;
+  width : 600px;
+  height : 400px;
+  border : 1px solid black;
+  overflow : hidden;
+  background-color : #a5cfd9;
+}
+
+#ground {
+  position : absolute;
+  top : 380px;
+  left : 0px;
+  width : 600px;
+  height : 20px;
+  border-top : 3px solid #8ca862;
+  background-color : green;
+}
+
+.display {
+  position : relative;
+  padding : 5px;
+  z-index : 100;
+}
