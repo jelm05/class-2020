@@ -1,0 +1,17 @@
+
+.container {
+  border: 1px solid blue;
+  text-align: center;
+  margin-top: 100px;
+  padding: 25px;
+}
+
+.text {
+  position: relative;
+  display: inline-block;
+  border: 1px solid red;
+}
+
+p {
+  position: absolute;
+}
