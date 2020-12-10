@@ -1,0 +1,68 @@
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+  height: 500px;
+  position: relative;
+}
+
+.slider ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  /* Width should be number of slides multiplied by 100% */
+  width: 300%;
+  height: 100%;
+  top: 0;
+}
+
+.slider li {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  /* Width should be 100% divided by number of slides */
+  width: 33.3333333333333%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border: none;
+}
+
+.slider li img {
+  border: none;
+  width: 100%;
+  min-height: 100%;
+}
+
+.slider button {
+  position: absolute;
+  display: block;
+  z-index: 2;
+  border: none;
+  outline: none;
+  top: 0;
+  bottom: 0;
+  width: 20%;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  opacity: 0;
+}
+
+.slider button.prev {
+  left: 0;
+}
+
+.slider button.next {
+  right: 0;
+}
+
+.slider button:hover,
+.slider button:active {
+  opacity: 1.0;
+  cursor: pointer;
+}
