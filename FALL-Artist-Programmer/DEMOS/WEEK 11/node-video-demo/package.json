@@ -1,0 +1,14 @@
+{
+  "name": "video-demo",
+  "version": "1.0.0",
+  "description": "Node.js demo for fall 2020 class.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Justin Elm",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
