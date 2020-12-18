@@ -1,0 +1,45 @@
+#nav-buttons {
+  text-align: center;
+  width: 900px;
+}
+
+div.button {
+  width: 160px;
+  height: 50px;
+  margin: 5px;
+  display: inline-block;
+  vertical-align: top;
+  background-color: grey;
+  color: white;
+  margin-bottom: 0px !important;
+}
+
+div.button h1 {
+  font-family: Helvetica Bold, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  height: 70%;
+  cursor: pointer;
+  margin-bottom: 0px !important;
+  color: red;
+}
+
+ul.toggle {
+
+  display: none;
+  
+  margin-bottom: 0;
+  list-style: none;
+  background-color: green;
+  margin-top: 0px !important;
+  padding: 10px;
+}
+
+ul.toggle li {
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  /* top right bottom left */
+  padding: 5px 0px 0px 0px;
+  text-align: left;
+}
